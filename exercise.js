@@ -4,8 +4,8 @@ function getItemById(items, id) {
 
 function buildTransactions(sales, items) {
     return sales.map(sale => {
-        const itemID = sale.itemID
-        const item = getItemById(items, itemID)
+        const itemId = sale.itemId
+        const item = getItemById(items, itemId)
 
         return {
             ...sale,
